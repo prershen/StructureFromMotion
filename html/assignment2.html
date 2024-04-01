@@ -92,18 +92,18 @@
 		<img src="../assignments/assignment2/assets/Benchmarking_Camera_Calibration_2008/box/images/IMG_20240331_130402.jpg" height="200vh"/>
 		</div>
 		<h3>My implementation</h3>
-		<p>Type: Incremental SfM without bundle Adjustment for Entry-P10</p>
+		<p>Type: Incremental SfM without bundle Adjustment</p>
 		<p>Vertices: 68198</p>
 		<p>Mean Reprojection Error: 173.31</p>
 		<p>Time Taken: 33.46 s</p>
 		<p>Comments: The 3D scene of my implementation of the box seems to be noisy because of lack of
-			bundle adjustment performed. There seems to be a lot of outliers as Colmap gives a better result of
-			the image. It can also be due to low quality of images.
+			bundle adjustment performed. It can also be due to low quality of images.
 		</p>
 		<script type="module" src="../js/assignment2_box.js"></script>
 		<div id="container4"></div>
 		<h3>Colmap of Box</h3>
 		<p>Vertices: 10107</p>
+		<p>Colmap performs better because of Bundle Adjustment as there are way lesser outliers.</p>
 		<script type="module" src="../js/assignment2_colmap_box.js"></script>
 		<div id="container5"></div>
 	</body>
