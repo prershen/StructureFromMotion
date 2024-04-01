@@ -4,7 +4,7 @@ import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { PLYLoader } from 'three/addons/loaders/PLYLoader.js';
 
-const container = document.getElementById( 'container3' );
+const container = document.getElementById( 'container4' );
 container.style.position = 'relative';
 let renderer, stats, gui;
 let scene, camera, controls, points;
@@ -29,9 +29,8 @@ function initScene() {
 	// cube = new THREE.Mesh( geometry, material );
 	const loader = new PLYLoader()
 	loader.load(
-    '../assignments/assignment2/assets/results/entry-P10/colmap.ply',
-    // '../assignments/assignment2/assets/results/box/point-clouds/cloud_8_view.ply',
-	function (geometry) {
+    '../assignments/assignment2/assets/results/box/point-clouds/cloud_8_view.ply',
+    function (geometry) {
 		points = new THREE.Points(geometry, material);
 		scene.add(points);
         // geometry.computeVertexNormals()
@@ -70,8 +69,8 @@ function initGUI() {
 function animate() {
 	requestAnimationFrame( animate );
 
-	// points.rotation.x += 0.01;
-	// points.rotation.y += 0.01;
+	points.rotation.x += 0.01;
+	points.rotation.y += 0.01;
 
 	renderer.render( scene, camera );
 	stats.update();
