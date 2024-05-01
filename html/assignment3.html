@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment3</title>
+		<style>
+			body { margin: 0; }
+		</style>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.147.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.147.0/examples/jsm/"
+          }
+        }
+    </script>
+	</head>
+	<body>
+		<h1 style="text-align: center;">Assignment 3</h1>
+		
+		<h2>3D Gaussian Splatting</h2>
+		<p></p>
+		<p>3D Gaussian Splatting  a rasterization technique for real-time 3D reconstruction and rendering of images taken from multiple points of view. 
+			The details of the training are as below:
+			<ul>
+				<li>
+					Training Iterations: 30,000
+				</li>
+				<li>
+					Training Images: 149
+				</li>
+				<li>
+					Testing Images: 22
+				</li>
+				<li>
+					SSIM: 0.9354
+				</li>
+				<li>
+					PSNR: 30.6651
+				</li>
+				<li>
+					LPIPS: 0.1280
+				</li>
+			</ul>
+		</p>
+		<h3>Sneak Peek into the data</h3>
+		<div style="justify-content: space-evenly; display: flex;">
+			<img src="../assignments/assignment3/darkg_images/66.jpg" height="200vh">
+			<img src="../assignments/assignment3/darkg_images/53.jpg" height="200vh">
+			<img src="../assignments/assignment3/darkg_images/41.jpg" height="200vh">
+		</div>
+		<h3>
+			Colmap Implementation
+		</h3>
+		<p>Number of points: 33866</p>
+        <div id="container"></div>
+		<script type="module" src="../js/assignment3.js"></script>
+		<h3>3D Gaussian Splatting implementation</h3>
+		<p>Number of points: 1449896</p>
+        <div id="container1"></div>
+		<script type="module" src="../js/assignment3_3dgs.js"></script>
+		<h2>Extra Credit: Implementation of NeRF</h2>
+		<h3>Video data used to train the NeRF model</h3>
+		<video width="320" controls style="justify-content: space-evenly; display: flex;">
+			<source src="..\assignments\assignment3\og_video.mp4" type="video/mp4">
+		</video>
+		<h3>Rendered Video from NeRF</h3>
+		<video width="1024" controls>
+			<source src="..\assignments\assignment3\new_view1.mp4" type="video/mp4">
+		</video>
+	</body>
+</html>
