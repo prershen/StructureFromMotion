@@ -3,7 +3,7 @@ Structure from motion (SfM) is the process of estimating the 3-D structure of a 
 
 ## How to use
 ```shell
-cd CSCI599
+Clone the repository
 ls ./ # you should see index.html and README.md showup in the terminal
 code ./ # open this folder via vscode locally
 # open and right click on the index.html
