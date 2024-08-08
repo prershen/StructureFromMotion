@@ -38,9 +38,6 @@ The following files are used:
 - `assignments/assignment2/sfm.py`
 - `assignments/assignment2/utils.py`
 - `html/assignment2.html`
--
+- `js/assignment2.js`
 
-https://github.com/user-attachments/assets/8d38f79b-dcf6-4e68-bd56-d52a59b3146e
-
- `js/assignment2.js`
-
+  https://github.com/user-attachments/assets/8d38f79b-dcf6-4e68-bd56-d52a59b3146e
