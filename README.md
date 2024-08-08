@@ -1,12 +1,6 @@
 # Structure From Motion
 Structure from motion (SfM) is the process of estimating the 3-D structure of a scene from a set of 2-D images. SfM is used in many applications, such as 3-D scanning, augmented reality, and visual simultaneous localization and mapping (vSLAM). 
 
-## Table of Contents
-- [How to use](#how-to-use)
-- Structure From Motion](#assignment-2-structure-from-motion)
-    - [Introduction](#introduction-1)
-    - [Requirements / Rubric](#requirements--rubric-1)
-
 ## How to use
 ```shell
 cd CSCI599
